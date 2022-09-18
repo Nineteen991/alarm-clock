@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS Alarm Clock</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="flex container">
+    <p id="current-time-display" class="current-time-display">--:--:--</p>
+    <p id="alarm-time-display" class="alarm-time-display">--:--:--</p>
+    <p id="alarm-message-display"></p>
+
+    <form class="alarm-inputs">
+
+      <label for="hours-input">Hours</label>
+      <input
+        id="hours-input"
+        type="number"
+        name="hour"
+        placeholder="00"
+        min="1"
+        max="12"
+        required
+      />
+
+      <label for="minutes-input">Minutes</label>
+      <input id="minutes-input"
+        type="number"
+        name="minute"
+        placeholder="00"
+        min="0"
+        max="59"
+        required
+      />
+
+      <select id="am-pm">
+        <option id="am">AM</option>
+        <option id="pm">PM</option>
+      </select>
+
+      <button id="set-alarm-button">Set alarm</button>
+      <button type="button" id="stop-alarm-button">I'm awake</button>
+
+    </form>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>

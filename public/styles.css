@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  --color-grey: #eee;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+
+  /* fallback for old browsers */
+  background: #c31432;
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #240b36, #c31432);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #240b36, #c31432); 
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container p {
+  font-size: 3em;
+  color: var(--color-grey);
+  margin: .25em;
+  
+  display: flex;
+  justify-content: center;
+}
+
+.current-time-display {
+  background: #1b263b;
+  padding: .25em .5em;
+  border-radius: 5px;
+}
+
+input, button {
+  font-family: inherit;
+  font-size: 2em;
+  border: none;
+  padding: .5em 1em;
+  border-radius: 5px;
+}
+
+button {
+  display: block;
+  width: 90%;
+  margin: 1em;
+  background: #ffe45e;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background: #f8ce00;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+select {
+  font-size: 3em;
+}
