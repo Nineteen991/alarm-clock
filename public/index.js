@@ -25,7 +25,6 @@ function setAlarm() {
     let wakeyHours = document.getElementById('hours-input')
     let wakeyMins = document.getElementById('minutes-input')
 
-    // Don't allow hours > 12 or minutes > 59 or either less than 0
     if (wakeyHours.value > 12) {
         wakeyHours.value = 12
     } 
@@ -46,7 +45,7 @@ function setAlarm() {
         wakeyMins.value = "0" + wakeyMins.value
     } 
     else if (wakeyMins.value === '0') {
-        wakeyMins.value = '00'  // if the minutes is set to 0; change to 00
+        wakeyMins.value = '00'
     }
 
     if (wakeyHours.value / 10 < 1) {
@@ -75,6 +74,5 @@ function stopAlarm() {
 
 renderCurrentTime()
 
-// set the alarm
 alarmBtn.addEventListener('click', setAlarm)
 stopBtn.addEventListener('click', stopAlarm)
