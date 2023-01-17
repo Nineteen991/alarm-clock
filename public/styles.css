@@ -74,3 +74,12 @@ button:active {
 select {
   font-size: 3em;
 }
+
+.time {
+  color: var(--color-grey);
+  font-size: 1.6rem;
+}
+
+#alarm-message-display {
+  margin-bottom: 3rem;
+}

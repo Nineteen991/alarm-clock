@@ -9,13 +9,13 @@
 </head>
 <body>
   <div class="flex container">
+    <p id="alarm-message-display"></p>
     <p id="current-time-display" class="current-time-display">--:--:--</p>
     <p id="alarm-time-display" class="alarm-time-display">--:--:--</p>
-    <p id="alarm-message-display"></p>
 
     <form class="alarm-inputs">
 
-      <label for="hours-input">Hours</label>
+      <label for="hours-input" class="time">Hours</label>
       <input
         id="hours-input"
         type="number"
@@ -26,8 +26,9 @@
         required
       />
 
-      <label for="minutes-input">Minutes</label>
-      <input id="minutes-input"
+      <label for="minutes-input" class="time">Minutes</label>
+      <input 
+        id="minutes-input"
         type="number"
         name="minute"
         placeholder="00"
